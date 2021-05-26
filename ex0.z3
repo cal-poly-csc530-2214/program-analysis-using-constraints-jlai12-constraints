@@ -1,0 +1,5 @@
+(echo "Is there an assignment of a that satisfies a > 10?")
+(declare-const a Int)
+(assert (> a 10))
+(check-sat)
+(get-value (a))
